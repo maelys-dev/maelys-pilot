@@ -12,6 +12,6 @@ permissions:
 
 jobs:
   check:
-    uses: maelys-dev/maelys-release/.github/workflows/check-product.yml@ea1bd432bf607b84233475f17281c27b9175a457 # v0.59.1
+    uses: maelys-dev/maelys-release/.github/workflows/check-product.yml@09c14a2e8584bd134c7cfa869bcbafecf5c6e976 # untagged
     with:
       product: maelys-pilot
