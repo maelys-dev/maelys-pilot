@@ -11,7 +11,16 @@ permissions:
   contents: read
 
 jobs:
+  # Probe only, for the review of maelys-release#148: what a check that needs
+  # a carry reports on a public repository, where the carry's own condition
+  # keeps it from running. Never merged.
+  carry:
+    uses: maelys-dev/maelys-release/.github/workflows/carry-dependencies.yml@b2b92e21324e48f154ebc071f3b74b284dd53dee # probe
+    with:
+      dependencies: maelys-probe
+      runner: '["ubuntu-latest"]'
   check:
+    needs: carry
     uses: maelys-dev/maelys-release/.github/workflows/check-product.yml@ea1bd432bf607b84233475f17281c27b9175a457 # v0.59.1
     with:
       product: maelys-pilot
