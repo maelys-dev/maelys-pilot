@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   release:
-    uses: maelys-dev/maelys-release/.github/workflows/release.yml@300794858a2c74d90ba822225001f3f50a585b77 # untagged
+    uses: maelys-dev/maelys-release/.github/workflows/release.yml@9f318dc9e8c2b4a4120c8da1afdd724b6f01029a # untagged
     permissions:
       contents: write
       id-token: write

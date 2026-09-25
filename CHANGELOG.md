@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.1 — 2026-09-25
+
+- Moves the socle pin to the commit that reads its own commit where GitHub
+  puts it. `v0.2.0` published nothing: the release workflow stopped on
+  `the reusable workflow's own commit is unknown`, because the property it
+  read has never been filled in that context. A published tag is never
+  moved, and a socle at fault is answered by a patch release of the product
+  carrying the corrected pin — this one.
+- Nothing else changes here.
+
 ## 0.2.0 — 2026-09-25
 
 - Adopts the maelys-release candidate for 0.62.0, so that a real release of
