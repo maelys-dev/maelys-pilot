@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.2 — 2026-09-29
+
+- Adopts the maelys-release candidate for 0.62.2, so that a real release of
+  this repository measures what the socle's tests cannot: `cut` reading back
+  the release branch and the tag it pushed — the tag by the commit it names
+  — and the sanitizer job of `check-product.yml` receiving its compiler
+  through `MAKEFLAGS` rather than as words appended to its command.
+- Nothing else changes here.
+
 ## 0.2.1 — 2026-09-25
 
 - Moves the socle pin to the commit that reads its own commit where GitHub
