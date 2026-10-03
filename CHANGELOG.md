@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 — 2026-10-03
+
+- Publishes a Homebrew formula: `brew install maelys-dev/tap/maelys-pilot`.
+  It exists so that the socle's Homebrew path runs here before it runs on
+  a product — render, bottle on two macOS runners, **pour the bottle as a
+  user would and run the formula's own test**, publish.
+- Adopts the maelys-release candidate `bd2be3f`, which carries that pour.
+
 ## 0.2.2 — 2026-09-29
 
 - Adopts the maelys-release candidate for 0.62.2, so that a real release of
