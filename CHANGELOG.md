@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.1 — 2026-10-08
+
+- Adopts the maelys-release candidate `b3187cc`, so that a real release of
+  this repository runs `release.yml` with the artifact actions moved from
+  v4 to v7 and v8: three targets hand their files to `publish`, which must
+  still find each in a directory of its own.
+- Nothing else changes here.
+
 ## 0.4.0 — 2026-10-08
 
 - Pins two repositories its build does not read, so that the socle's
