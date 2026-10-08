@@ -12,6 +12,23 @@ permissions:
 
 jobs:
   check:
-    uses: maelys-dev/maelys-release/.github/workflows/check-product.yml@bd2be3f943c71533eee6e635dca310a1e931423d # untagged
+    uses: maelys-dev/maelys-release/.github/workflows/check-product.yml@b0409ab201bfe683531b0ade8395c8cbd12f5520 # untagged
     with:
       product: maelys-pilot
+
+  # The one job that reads the pin marked on-request, and so the one that
+  # clones it -- by name, with the managed script, as a product does. The
+  # socle's own jobs above skip that pin and say so in their log. Bounded
+  # here because this job is the pilot's: the socle bounds its own.
+  on-request:
+    name: on-request (linux)
+    runs-on: ubuntu-26.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Clone the pin this job reads, and only that one
+        run: |
+          set -eu
+          sh scripts/checkout-dependency.sh maelys-system "$RUNNER_TEMP/dependencies/maelys-system"
+          test "$(git -C "$RUNNER_TEMP/dependencies/maelys-system" rev-parse HEAD)" = "$(sed -n 2p dependencies/maelys-system.pin)"
+          test ! -e "$RUNNER_TEMP/dependencies/maelys-json"

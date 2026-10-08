@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.0 — 2026-10-08
+
+- Pins two repositories its build does not read, so that the socle's
+  clones run here: `maelys-json`, which every job clones, and
+  `maelys-system`, marked `on-request`, which the socle's jobs skip and one
+  job of this repository clones by name.
+- Adopts the maelys-release candidate `b0409ab`: the `on-request` attribute
+  and the duration of each clone in the log, a bound on every job of the
+  socle, `apt-get update` cut after two minutes, and the framework that
+  completes under bash and zsh.
+
 ## 0.3.0 — 2026-10-03
 
 - Publishes a Homebrew formula: `brew install maelys-dev/tap/maelys-pilot`.
