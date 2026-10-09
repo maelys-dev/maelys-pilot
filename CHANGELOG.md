@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.2 — 2026-10-09
+
+- Adopts the maelys-release candidate `20e96d0`, so that a real release of
+  this repository runs the step `release.yml` gained: the provenance of
+  every file `SHA256SUMS` names is verified, with the command
+  `RELEASING.md` gives, before the release is published.
+- Nothing else changes here.
+
 ## 0.4.1 — 2026-10-08
 
 - Adopts the maelys-release candidate `b3187cc`, so that a real release of
