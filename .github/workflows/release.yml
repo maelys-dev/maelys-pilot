@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   release:
-    uses: maelys-dev/maelys-release/.github/workflows/release.yml@9ffbb480dbd06dde6f739c15ea923848722adcc1 # untagged
+    uses: maelys-dev/maelys-release/.github/workflows/release.yml@a50c50bbcd3e682b762a62c2c95581e540383d97 # untagged
     permissions:
       contents: write
       id-token: write
@@ -33,7 +33,7 @@ jobs:
   tap-maelys-pilot:
     needs: release
     if: needs.release.result == 'success'
-    uses: maelys-dev/maelys-release/.github/workflows/tap.yml@9ffbb480dbd06dde6f739c15ea923848722adcc1 # untagged
+    uses: maelys-dev/maelys-release/.github/workflows/tap.yml@a50c50bbcd3e682b762a62c2c95581e540383d97 # untagged
     permissions:
       contents: write
       id-token: write

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.4 — 2026-10-10
+
+- Adopts the maelys-release candidate `a50c50b`, which vendors
+  the framework of maelys-cli 0.7.0: `adopt`, `check` and both stops of
+  `cut` run here under the new module before they run on a product.
+- Nothing else changes here.
+
 ## 0.4.3 — 2026-10-10
 
 - Adopts the maelys-release candidate `9ffbb48`, so that a real
