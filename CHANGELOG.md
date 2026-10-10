@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.3 — 2026-10-10
+
+- Adopts the maelys-release candidate `9ffbb48`, so that a real
+  release of this repository is cut by it: the first stop asks GitHub
+  whether it verifies the release commit, and the second verifies the tag
+  against the allowed signers of the socle.
+- Nothing else changes here.
+
 ## 0.4.2 — 2026-10-09
 
 - Adopts the maelys-release candidate `20e96d0`, so that a real release of
