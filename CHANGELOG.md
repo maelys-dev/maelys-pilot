@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.5 — 2026-10-11
+
+- Adopts the maelys-release candidate `0752015`, which carries ten
+  changes at once. Two managed scripts move here — the one that clones a
+  pin now stops on a `repository` line it cannot read, the one that
+  clones them all fetches the socle's tag when the workflow names one —
+  and so do the agents' texts. This repository's CI runs the new `check`
+  on a runner, and its release is cut by the new `cut`.
+- Nothing else changes here.
+
 ## 0.4.4 — 2026-10-10
 
 - Adopts the maelys-release candidate `a50c50b`, which vendors
