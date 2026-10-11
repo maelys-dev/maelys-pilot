@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.6 — 2026-10-11
+
+- Adopts the maelys-release candidate `a84fa7f`, which carries five
+  corrections of 0.64.0. No managed text and no script moves here: the
+  two workflows follow the pin. This repository's CI runs the candidate's
+  `check` on a runner, its release is cut by the candidate's `cut`, and
+  the candidate's `protect` reads this repository's protection and finds
+  nothing to change.
+- Nothing else changes here.
+
 ## 0.4.5 — 2026-10-11
 
 - Adopts the maelys-release candidate `0752015`, which carries ten
