@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.8 — 2026-10-15
+
+- Adopts the maelys-release candidate `85ab235`, whose bottle job
+  sets the shared tap's formula of this repository's name aside while it
+  builds, pours and tests, and puts it back. This repository's formula is
+  in the shared tap at 0.4.7, so its bottles are an update: the new steps
+  run here on a real runner. Nothing else moves.
+- Nothing else changes here.
+
 ## 0.4.7 — 2026-10-12
 
 - Adopts the maelys-release candidate `dc7394e`, which carries what
