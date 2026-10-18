@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.9 — 2026-10-18
+
+- Adopts the maelys-release candidate `6b4c569`, whose code is laid out
+  anew: the entry point holds no command, the command line stands apart
+  in `cli/`, one module per command, the forge one object. Nothing it does
+  changes. This repository's CI runs the candidate's `check` from the
+  pinned socle it fetches, and its release is cut by the candidate's
+  `cut`: the restructured code runs where a product runs it.
+- Nothing else changes here.
+
 ## 0.4.8 — 2026-10-15
 
 - Adopts the maelys-release candidate `85ab235`, whose bottle job
