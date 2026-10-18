@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.10 — 2026-10-18
+
+- Adopts the maelys-release candidate `612be55`, which corrects three
+  readings: a 404 that does not say a branch is open, a check a ruleset
+  requires from any source, a name in the working tree alone. This
+  repository is protected by a classic protection and its names are
+  UTF-8, so none of the three paths runs here: the trial is that nothing
+  else moves. Its CI runs the candidate's `check`, its release is cut by
+  the candidate's `cut`, and the candidate's `preflight` and `protect`
+  read its protection as they did.
+- Nothing else changes here.
+
 ## 0.4.9 — 2026-10-18
 
 - Adopts the maelys-release candidate `6b4c569`, whose code is laid out
