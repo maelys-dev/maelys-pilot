@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.13 — 2026-10-24
+
+- Adopts the maelys-release candidate `489b6a7`, whose `migrate` takes
+  `--site` to name a product's site in its README. This repository moves
+  no prose, so that path does not run here: the trial is that nothing
+  else moves. Its CI runs the candidate's `check`, its release is cut by
+  the candidate's `cut`, and the candidate's `publish` checks every
+  target handed its artifact.
+- Nothing else changes here.
+
 ## 0.4.12 — 2026-10-24
 
 - Adopts the maelys-release candidate `fec6a1c`. Its `publish` checks that
