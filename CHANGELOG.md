@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.11 — 2026-10-24
+
+- Adopts the maelys-release candidate `f2b0a67`, built on maelys-cli
+  v0.10.0 and agent-cli-spec v2.19.0: the candidate's help and `describe`
+  change, its commands do not. This repository carries no command line of
+  its own, so the trial is that its CI runs the candidate's `check`, its
+  release is cut by the candidate's `cut`, and the candidate's `preflight`
+  and `protect` read its protection as they did.
+- Nothing else changes here.
+
 ## 0.4.10 — 2026-10-18
 
 - Adopts the maelys-release candidate `612be55`, which corrects three
