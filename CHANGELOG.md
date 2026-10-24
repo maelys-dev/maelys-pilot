@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.12 — 2026-10-24
+
+- Adopts the maelys-release candidate `fec6a1c`. Its `publish` checks that
+  every target handed its artifact before it assembles anything, and says
+  so when they expired: this release runs that step with all three there.
+  Its `migrate` reads links from their own file and leaves sentences whole;
+  this repository moves no prose, so that path does not run here.
+- Nothing else changes here.
+
 ## 0.4.11 — 2026-10-24
 
 - Adopts the maelys-release candidate `f2b0a67`, built on maelys-cli
