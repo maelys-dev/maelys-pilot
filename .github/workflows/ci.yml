@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   check:
-    uses: maelys-dev/maelys-release/.github/workflows/check-product.yml@489b6a7b525a7405b16e121efb597782e4c05db7 # untagged
+    uses: maelys-dev/maelys-release/.github/workflows/check-product.yml@41c7c5be217b72e966a946a13c6d456c3ee1b33d # untagged
     with:
       product: maelys-pilot
 

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.14 — 2026-10-25
+
+- Adopts the maelys-release candidate `41c7c5b`, built on maelys-cli v0.12.3
+  and agent-cli-spec v2.21.0: the candidate's help gains `--lang` and its
+  commands do not change. The trial is that its CI runs the candidate's
+  `check`, its release is cut by the candidate's `cut`, and the
+  candidate's `preflight` and `protect` read its protection as they did.
+- Nothing else changes here.
+
 ## 0.4.13 — 2026-10-24
 
 - Adopts the maelys-release candidate `489b6a7`, whose `migrate` takes
