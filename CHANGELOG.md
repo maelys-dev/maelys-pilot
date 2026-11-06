@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.15 — 2026-11-06
+
+- Adopts the maelys-release candidate `1bc0a89`, whose `declarations`
+  draws each workflow's job graph. Read by that candidate, every socle
+  call of this repository resolves: `check`, `release` and the tap are
+  followed into the socle's own jobs. The trial is that its CI runs the
+  candidate's `check`, its release is cut by the candidate's `cut`, and
+  its publication goes through the candidate's `release.yml`.
+- Nothing else changes here.
+
 ## 0.4.14 — 2026-10-25
 
 - Adopts the maelys-release candidate `41c7c5b`, built on maelys-cli v0.12.3
