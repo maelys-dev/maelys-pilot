@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.16 — 2026-11-08
+
+- Adopts the maelys-release candidate `d072fdc`, whose tag gate is one
+  script that `release.yml` runs and that a product deploying its own way
+  calls alone, through `verify-tag.yml`. The trial is both paths on one
+  tag: the release is verified by the candidate's `release.yml`, and the
+  new `deploy-demo.yml` calls `verify-tag.yml` on the same tag before a
+  deploy job that deploys nothing and prints what the gate verified.
+- Nothing else changes here.
+
 ## 0.4.15 — 2026-11-06
 
 - Adopts the maelys-release candidate `1bc0a89`, whose `declarations`
