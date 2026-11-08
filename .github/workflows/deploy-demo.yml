@@ -1,0 +1,35 @@
+name: deploy-demo
+
+# The trial of the socle's tag gate, verify-tag.yml, as a product that
+# deploys its own way calls it: before a deploy job, which here deploys
+# nothing and prints what the gate verified.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing signed tag to verify
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  tag:
+    uses: maelys-dev/maelys-release/.github/workflows/verify-tag.yml@d072fdc3a5130c7957a88f98533c3be696dce8dc # untagged
+    with:
+      tag: ${{ inputs.tag }}
+  deploy:
+    needs: tag
+    runs-on: ubuntu-26.04
+    timeout-minutes: 5
+    steps:
+      - name: Say what the gate verified
+        env:
+          TAG: ${{ needs.tag.outputs.tag }}
+          VERSION: ${{ needs.tag.outputs.version }}
+          COMMIT: ${{ needs.tag.outputs.commit }}
+        run: echo "the gate verified $TAG, version $VERSION, commit $COMMIT"
