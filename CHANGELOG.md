@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.17 — 2026-11-13
+
+- Adopts the maelys-release candidate `779facd`, whose `cut` takes
+  `--left PATH` for a file that keeps the old version as history, and
+  whose plan refuses, as `--apply` would, when a file the last bump moved
+  the version in still holds the old one. This product's last bump moved
+  `VERSION` alone: its plan must read as it did, and its cut go through
+  unchanged.
+- Nothing else changes here.
+
 ## 0.4.16 — 2026-11-08
 
 - Adopts the maelys-release candidate `d072fdc`, whose tag gate is one
