@@ -2,7 +2,7 @@
 
 ## 0.4.17 — 2026-11-13
 
-- Adopts the maelys-release candidate `779facd`, whose `cut` takes
+- Adopts the maelys-release candidate `d913090`, whose `cut` takes
   `--left PATH` for a file that keeps the old version as history, and
   whose plan refuses, as `--apply` would, when a file the last bump moved
   the version in still holds the old one. This product's last bump moved
